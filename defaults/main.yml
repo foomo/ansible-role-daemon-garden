@@ -1,0 +1,17 @@
+---
+# For more information about default variables see:
+# http://www.ansibleworks.com/docs/playbooks_variables.html#id26
+#
+
+# user
+daemon_garden_user: www-data
+# package name (version)
+daemon_garden_package: daemon-garden
+# bind address
+daemon_garden_address: 127.0.0.1:8080
+# log path
+daemon_garden_logpath: /var/log/daemon-garden
+# start on boot
+daemon_garden_service_enabled: yes
+# current state: started, stopped
+daemon_garden_service_state: started

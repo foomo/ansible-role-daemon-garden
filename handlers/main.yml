@@ -1,0 +1,5 @@
+---
+
+- name: restart daemon-garden
+  service: name=daemon-garden state=restarted
+  when: daemon_garden_service_state != 'stopped'

@@ -1,0 +1,22 @@
+---
+
+- include: install.yml
+  tags:
+    - development
+    - daemon-garden
+    - install
+    - daemon-garden-install
+
+- include: config.yml
+  tags:
+    - development
+    - daemon-garden
+    - config
+    - daemon-garden-config
+
+- include: service.yml
+  tags:
+    - development
+    - daemon-garden
+    - service
+    - daemon-garden-service

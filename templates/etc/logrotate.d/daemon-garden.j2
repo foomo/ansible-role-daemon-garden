@@ -1,0 +1,11 @@
+# {{ ansible_managed }}
+
+{{ daemon_garden_logpath }}/*.log {
+  su root
+  compress
+  copytruncate
+  daily
+  dateext
+  rotate 7
+  size 10M
+}
