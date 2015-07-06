@@ -3,7 +3,7 @@
 - name: Adding sources
   shell: curl -s https://packagecloud.io/install/repositories/foomo/daemon-garden/script.deb.sh | bash
   args:
-    creates: /etc/apt/sources.list.d/foomo_content-server.list
+    creates: /etc/apt/sources.list.d/foomo_daemon-garden.list
 
 - name: Installing package
   action: "{{ ansible_pkg_mgr }} pkg={{ daemon_garden_package }} state=present"

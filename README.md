@@ -36,7 +36,7 @@ Here is a list of all the default variables for this role, which are also availa
 
 ```
 # package name (version)
-content_server_package: daemon-garden
+daemon_garden_package: daemon-garden
 ```
 
 ## Handlers
